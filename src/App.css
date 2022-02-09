@@ -1,38 +1,111 @@
-.App {
-  text-align: center;
+body{
+  padding: 0;
+  margin: 0;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav{
+  position: relative;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 30px;
+}
+nav h1{
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.drop{
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0px;
+}
+.drop .menu{
+  display: none;
+}
+.drop:hover .menu{
+  position: absolute;
+  display: flex;
+  margin-top: 10px;
+  flex-direction: column;
+  background: white;
+  margin-top: 20px;
+  margin-left: 20px;
+  color: black !important;
+  padding: 10px 120px 10px 10px ;
+}
+.drop:hover .closed{
+  display: block;
+}
+.drop .closed{
+  transform: rotateZ(180deg);
+}
+.drop:hover .opened{
+  display: none;
+}
+.drop .title{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.opened,.closed{
+  font-weight: bold;
+  font-size: 1rem;
+}
+.closed{
+  display: none;
+  margin-left: 5px;
+}
+.opened{
+  margin-left: 5px;
+}
+.menu a{
+  color: black !important;
+  margin-left: 0px !important;
+  font-weight: normal !important;
+  margin-bottom: 3px !important;
+}
+.menu a .line{
+  width: 0%;
+  height: 1px;
+  background: black;
+  transition: 0.7s;
+}
+.menu a:hover .line{
+  width: 100%;
+}
+.n1{
+  display: flex;
+  align-items: center;
+  color: white;
+  margin-left: 10px;
+}
+.n1 h1, .n1 a{
+  margin-left: 10px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+label{
+  margin-left: 10px;
+  font-weight: bold;
+}
+.hero{
+  position: relative;
+  width: 100%;
+  height: 80vh;
+}
+#heroimg{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+nav{
+  background: none;
+}
+nav img{
+  width: 10%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h1{
+  z-index: 10;
+  background-color: none;
 }
