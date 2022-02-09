@@ -79,10 +79,10 @@ nav h1{
   transition: 0.7s;
 }
 .menu a:hover{
-  color: cyan !important;
+  color: #02B2EE !important;
 }
 .menu a:hover .line{
-  background: cyan;
+  background: #02B2EE;
   width: 100%;
 }
 .n1{
