@@ -16,9 +16,14 @@ nav h1{
   display: flex;
   flex-direction: column;
   padding: 10px 0px;
+  cursor: pointer;
+}
+.drop:hover{
+  cursor: pointer;
 }
 .drop .menu{
   display: none;
+  cursor: pointer;
 }
 .drop:hover .menu{
   position: absolute;
@@ -108,4 +113,28 @@ nav img{
 h1{
   z-index: 10;
   background-color: none;
+}
+.n2{
+  display: flex;
+  align-items: center;
+  margin-left: 300px;
+}
+.n2 .avatar{
+  padding: 10px;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center ;
+  justify-content: center;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+.avatar img{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.n2 h1{
+  margin-left: 10px;
 }

@@ -1,3 +1,8 @@
 {
-    "areas":["Downtown Dubai","Pal Jumeirah","Dubai Marina","JBR","Bussisness Bay","Emaar Beachfront","Dubai Hills Estate","Dubai ceek Habour"]
+    "lang":["RU","AR"],
+    "about":["Metropoilitican Group","Join Metropolitican group","Agents","Media","Blog","Contact us"],
+    "areas":["Downtown Dubai","Pal Jumeirah","Dubai Marina","JBR","Bussisness Bay","Emaar Beachfront","Dubai Hills Estate","Dubai ceek Habour"],
+    "projects":["Apartments","Penthouse","Townhouses","Villas","Plots","See all Projects in Dubai"],
+    "dev":["Emaar","DAMAC","Meraas","Select Group","See all Developers in Dubai"],
+    "services":["Buying Property","Selling Property","Renting Property","Property Management","Mortages","Short term rentals","Citenzenship Programs","Property Handover Services","Legal Services","Properties in UK"]
 }
