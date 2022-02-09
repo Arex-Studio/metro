@@ -1,0 +1,26 @@
+.feature{
+    position: relative;
+    margin-top: 2%;
+    width: 100%;
+    height: 60vh;
+}
+.fr1{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bline{
+    width: 10%;
+    height: 2px;
+    background: #02B2EE;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.fr2{
+    position: relative;
+    margin-top: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
