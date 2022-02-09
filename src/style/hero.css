@@ -69,3 +69,12 @@
 .row1 .button:hover .fill{
     width: 100%;
 }
+.rowitem1{
+    width: 24%;
+}
+.rowitem2{
+    display: flex;
+    justify-content: space-evenly;
+    width: 60%;
+    height: 3.5vh;
+}
