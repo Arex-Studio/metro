@@ -1,9 +1,8 @@
-import Dropdown from 'react-dropdown';
-import 'react-dropdown/style.css';
 
+//<Dropdown className='cdrop' options={options} value={options[0]} />
 let Selector = ({options})=>{
     return(
-        <Dropdown className='cdrop' options={options} value={options[0]} />
+        <></>
     )
 }
 export default Selector
