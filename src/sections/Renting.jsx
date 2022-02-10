@@ -2,14 +2,14 @@ import CarosalView from "../components/Carosal"
 import Header from "../components/Header"
 import '../style/buying.css'
 
-let Buying = ()=>{
+let Renting = ()=>{
     return(
         <div className="buying">
-            <Header title={"Buying Properties in Dubai"}/>
+             <Header title={"Renting Properties in Dubai"}/>
             <div className="list">
-            <CarosalView/>
+            <CarosalView rent={true}/>
             </div>
         </div>
     )
 }
-export default Buying
+export default Renting

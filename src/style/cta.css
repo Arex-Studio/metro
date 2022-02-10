@@ -1,0 +1,43 @@
+.cta{
+    position: relative;
+    width: 100%;
+    display: flex;
+    height: 55vh;
+    background: #f9f9f9;
+    margin-bottom: 10vh;
+}
+.cta img{
+    width: 40%;
+}
+.innerheader{
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+.innerheader .line{
+    width: 100px;
+    margin-left: 10px;
+    height: 2px;
+    background: #02b2ee;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    width: 50%;
+}
+.column p{
+    width: 60%;
+    margin-left: 3%;
+    line-height: 1.5;
+
+}
+.column button{
+    background: #02b2ee;
+    border: none;
+    outline: none;
+    color: white;
+    width: 30%;
+    padding: 10px 0px;
+    margin-left: 3%;
+}

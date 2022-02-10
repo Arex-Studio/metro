@@ -1,0 +1,21 @@
+@import url('http://fonts.cdnfonts.com/css/gotham');
+.about{
+    margin-top: 40px;
+}
+.about p{
+    padding: 0 10px;
+    width: 70%;
+    margin: 0;
+    font-family: 'Gotham Light', sans-serif;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    font-size: large;
+}
+.container{
+    width: 80%;
+    height: 50%;
+    margin: 0 auto;
+    margin-top: 30px;
+}

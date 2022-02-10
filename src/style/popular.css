@@ -1,0 +1,40 @@
+.rowA{
+    display: grid;
+    width: 70%;
+    margin: 0 auto;
+    height: 80px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.rowA img{
+    width: 98%;
+    height: 22vh;
+    margin: 10px;
+}
+.rowA .img{
+    position: relative;
+    opacity: 0.9;
+}
+.rowA .img .detail{
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    outline: black;
+    padding: 2% 10%;
+    color: white;
+    font-size: small;
+}
+.rowA .img h1{
+    margin: 0;
+    padding: 0;
+
+}
+.rowA .img h4{
+    margin: 0;
+    padding: 0;
+   
+}
+.rowA .first{
+    grid-column: 1 / span 2;
+}

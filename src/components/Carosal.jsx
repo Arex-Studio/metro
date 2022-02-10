@@ -2,7 +2,7 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import image from '../assets/logo.png'
 import CardImage from "./CardImage";
-let CarosalView = ()=>{
+let CarosalView = ({rent=false,expanding = true})=>{
     const responsive = {
         superLargeDesktop: {
           // the naming can be any, depends on you.
@@ -36,11 +36,11 @@ let CarosalView = ()=>{
                     itemClass="carousel-item-padding-40-px caro"
             
             >
-            <CardImage/>
-            <CardImage/>
-            <CardImage/>
-            <CardImage/>
-            <CardImage/>
+            <CardImage rent={rent} expanded={expanding}/>
+            <CardImage rent={rent} expanded={expanding}/>
+            <CardImage rent={rent} expanded={expanding}/>
+            <CardImage rent={rent} expanded={expanding}/>
+            <CardImage rent={rent} expanded={expanding}/>
                 
     </Carousel>
         </div>
