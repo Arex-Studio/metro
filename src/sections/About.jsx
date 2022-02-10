@@ -3,6 +3,7 @@ import Header from "../components/Header"
 import '../style/about.css'
 import InfoCard from '../components/InfoCard'
 let About = ()=>{
+
     return (
         <div className="buying about">
             <Header title={"About Us"} showProperties={false}/>
