@@ -1,6 +1,6 @@
 .buying{
     width: 80%;
-    height: 65vh;
+    min-height: 65vh;
     margin: 0 auto;
 }
 .buying .list{

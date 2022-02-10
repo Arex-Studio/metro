@@ -8,7 +8,7 @@ import g3 from '../assets/g3.jpg'
 import g4 from '../assets/g4.jpg'
 let Popular = ()=>{
     return(
-        <div className="buying">
+        <div className="buying pop">
              <Header title={"Popular Areas in Dubai"}/>
              <div className="rowA">
                  <div className="img first">

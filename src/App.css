@@ -297,3 +297,126 @@ h1{
   justify-content: space-evenly;
   margin-bottom: 30px;
 }
+
+
+
+
+
+
+
+@media screen and (max-width: 1551px) {
+  nav img{
+     width: 200px;
+  }
+  nav {
+    justify-content: flex-start;
+  }
+  .n1{
+    display: none;
+  }
+  .n2{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1244px) {
+   .cta{
+     display: block !important;
+     height: 130vh !important;
+   }
+   .cta img{
+     width: 100% !important;
+   }
+   .cta .column{
+     width: 100% !important;
+   }
+   .crow{
+     display: flex !important;
+     flex-direction: column !important;
+   }
+   .infocard{
+     width: 80%;
+     margin-bottom: 10px;
+   }
+   .rowA {
+     display: block !important;
+   }
+   .pop{
+     height: 180vh !important;
+   }
+   .cardimage{
+     transform: scale(0.8);
+   }
+   .header{
+     transform: scale(0.7);
+   }
+}
+
+@media screen and (max-width: 735px){
+  
+}
+
+
+
+@media screen and (max-width: 735px) {
+  .fr2{
+    display: flex;
+    flex-direction: column;
+  }
+  .card{
+    margin-bottom: 30px;
+  }
+  .feature{
+    height: 180vh;
+  }
+  .title h1{
+    font-size: large;
+  }
+  .header button{
+    display: none;
+  }
+  .cardimage{
+    transform: scale(0.7);
+  }
+  .pop{
+    height: 190vh !important;
+  }
+  .rowA {
+    display:block !important;
+    flex-direction: column;
+  }
+  .crow{
+    flex-direction: column;
+  }
+  .infocard{
+    width: 90%;
+  }
+  .infocard p{
+    font-size: 0.8rem !important;
+  }
+  .about{
+    height: 90vh;
+  }
+  .cta {
+    width: 100% !important;
+    flex-direction: column;
+    height: 100vh !important;
+  }
+  .cta img{
+    width: 100% !important;
+    height: 20% !important;
+  }
+  .innerheader{
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .column{
+    width: 100% !important;
+  }
+  .column p{
+     width: 80% !important;
+     margin: 10 auto;
+  }
+}

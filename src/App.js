@@ -8,6 +8,7 @@ import Offplan from './sections/Offplan';
 import Popular from './sections/Popular';
 import About from './sections/About';
 import CTA from './sections/CTA';
+import Footer from './sections/Footer';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <Popular/>
       <About/>
       <CTA/>
+      <Footer/>
     </div>
   );
 }
