@@ -2,14 +2,15 @@ import '../style/mobilenav.css'
 import lf from '../assets/lf.svg'
 import wapp from '../assets/wapp.PNG'
 import Avatar from '../components/Avatar'
-let MobileNavBar = ()=>{
+let MobileNavBar = ({onClose})=>{
     return (
         <div className="mobilenav">
             <nav>
                 <div className="logo"><img src={lf} alt="" /></div>
                 <div className="option">
-                    <Avatar background='white' img={wapp}/>
-                    <Avatar background='white' img={wapp}/>
+                    <Avatar background='whitesmoke' img={wapp}/>
+                    <Avatar background='whitesmoke' img={wapp}/>
+                    <h1 onClick={onClose}>X</h1>
                 </div>
             </nav>
             <div className="body">

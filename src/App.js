@@ -17,7 +17,7 @@ function App() {
   return (
     <div className="App">
       {!mobileNav && <HeroSection onNavBarOpen={()=>setMobileNav(true)}/>}
-      {mobileNav && <MobileNavBar/>}
+      {mobileNav && <MobileNavBar onClose={()=>setMobileNav(false)}/>}
       {!mobileNav && <Features/>}
       {!mobileNav && <Buying/>}
       {!mobileNav && <Renting/>}

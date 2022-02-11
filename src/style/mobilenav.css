@@ -7,13 +7,28 @@
 .mobilenav nav{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .mobilenav nav .option{
     display: flex;
     align-items: center;
+    justify-content: space-around;
+}
+.mobilenav nav .option{
+    width: 35%;
 }
 .mobilenav .body{
     font-size: large;
     font-weight: bold;
     margin-left: 5%;
+}
+.mobilenav .option h1{
+    color: #333;
+    font-size: xx-large;
+    margin: 0;
+    padding: 0;
+}
+.option h1:hover{
+    color: #02b2ee;
+    cursor: pointer;
 }

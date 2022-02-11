@@ -462,3 +462,46 @@ h1{
     text-align: justify !important;
   }
 }
+@media screen and (max-width: 600px){
+  .feature{
+
+    height: 130vh !important;
+  }
+  .header{
+    transform: scale(1.1);
+  }
+  .about{
+    height: 100vh !important;
+  }
+  .innerheader{
+    transform: scale(0.8);
+  }
+  .cta{
+    height: 160vh !important;
+  }
+  .cta p{
+    text-align: justify;
+  }
+  .links{
+    transform: scale(0.6);
+  }
+  .inputs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .inputs input{
+    width: 80% !important;
+    margin-bottom: 10px;
+  }
+  .transparent h1{
+    font-size: medium !important;
+  }
+  .hero{
+    height: 50vh !important;
+  }
+  .about p{
+    width: 90% !important;
+    text-align: justify !important;
+  }
+}
