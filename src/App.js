@@ -9,19 +9,23 @@ import Popular from './sections/Popular';
 import About from './sections/About';
 import CTA from './sections/CTA';
 import Footer from './sections/Footer';
+import { useState } from 'react';
+import MobileNavBar from './sections/MobileNavbar';
 
 function App() {
+  let [mobileNav,setMobileNav] = useState(false)
   return (
     <div className="App">
-      <HeroSection/>
-      <Features/>
-      <Buying/>
-      <Renting/>
-      <Offplan/>
-      <Popular/>
-      <About/>
-      <CTA/>
-      <Footer/>
+      {!mobileNav && <HeroSection onNavBarOpen={()=>setMobileNav(true)}/>}
+      {mobileNav && <MobileNavBar/>}
+      {!mobileNav && <Features/>}
+      {!mobileNav && <Buying/>}
+      {!mobileNav && <Renting/>}
+      {!mobileNav && <Offplan/>}
+      {!mobileNav && <Popular/>}
+      {!mobileNav && <About/>}
+      {!mobileNav && <CTA/>}
+      {!mobileNav && <Footer/>}
     </div>
   );
 }

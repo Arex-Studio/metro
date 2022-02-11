@@ -1,7 +1,7 @@
 
-let Avatar = ({img,background="red"})=>{
+let Avatar = ({img,background="red", onClick})=>{
     return(
-        <div className="avatar" style={{background:background}}>
+        <div onClick={onClick} className="avatar" style={{background:background}}>
             <img src={img} />
         </div>
     )

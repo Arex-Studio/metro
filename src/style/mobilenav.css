@@ -1,0 +1,19 @@
+.mobilenav{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: whitesmoke;
+}
+.mobilenav nav{
+    display: flex;
+    justify-content: space-between;
+}
+.mobilenav nav .option{
+    display: flex;
+    align-items: center;
+}
+.mobilenav .body{
+    font-size: large;
+    font-weight: bold;
+    margin-left: 5%;
+}

@@ -436,6 +436,9 @@ h1{
   .cta{
     height: 160vh !important;
   }
+  .cta p{
+    text-align: justify;
+  }
   .links{
     transform: scale(0.6);
   }
@@ -447,5 +450,15 @@ h1{
   .inputs input{
     width: 80% !important;
     margin-bottom: 10px;
+  }
+  .transparent h1{
+    font-size: medium !important;
+  }
+  .hero{
+    height: 50vh !important;
+  }
+  .about p{
+    width: 90% !important;
+    text-align: justify !important;
   }
 }
