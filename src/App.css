@@ -2,6 +2,7 @@
 html {
   scroll-behavior: smooth;
 }
+
 body{
   padding: 0;
   margin: 0;
@@ -269,7 +270,7 @@ h1{
  color: white;
 }
 .bottom h3{
-  background: #02B2EE;
+  background: #ff0000;
   padding: 2px 20px;
 }
 .bar .image{
