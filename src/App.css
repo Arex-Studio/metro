@@ -575,7 +575,7 @@ h1{
     font-size: medium !important;
   }
   .hero{
-    height: 50vh !important;
+    height: 80vh !important;
   }
   .about p{
     width: 90% !important;
@@ -583,6 +583,7 @@ h1{
   }
 }
 @media screen and (max-width: 600px){
+ 
   .feature{
     width: 100% !important;
   }
@@ -636,7 +637,7 @@ h1{
     font-size: medium !important;
   }
   .hero{
-    height: 50vh !important;
+    height: 50vh;
   }
   .about p{
     width: 90% !important;
