@@ -571,6 +571,9 @@ h1{
     width: 80% !important;
     margin-bottom: 10px;
   }
+  .transparent{
+    width: 80% !important;
+  }
   .transparent h1{
     font-size: medium !important;
   }
