@@ -135,11 +135,12 @@ nav h1{
   background: black;
   transition: 0.7s;
 }
+
 .menu a:hover{
-  color: #02B2EE !important;
+  color: #ff0000 !important;
 }
 .menu a:hover .line{
-  background: #02B2EE;
+  background: #ff0000;
   width: 100%;
 }
 .n1{
@@ -175,7 +176,7 @@ nav{
   background: none;
 }
 nav img{
-  width: 10%;
+  width: 5%;
 }
 
 h1{
@@ -361,9 +362,7 @@ h1{
 
 
 @media screen and (max-width: 1183px) {
-  nav img{
-     width: 200px;
-  }
+ 
   nav {
     justify-content: flex-start;
   }
@@ -423,6 +422,10 @@ h1{
 }
 
 @media screen and (max-width: 1062px){
+  nav img{
+    width: 8%;
+    margin-left: 10%;
+  }
   .n3{
     display: block;
     position: relative;
@@ -579,6 +582,10 @@ h1{
   }
 }
 @media screen and (max-width: 600px){
+    nav img{
+      width: 8%;
+      margin-left: 10%;
+    }
   .feature{
 
     height: 130vh !important;
@@ -641,9 +648,76 @@ h1{
     margin-top: 30%;
   }
 }
-
+@media screen and (max-width: 1394px){
+  nav img{
+   width: 8%;
+  }
+ 
+}
+@media screen and (max-width: 1580px){
+  .findBtn {
+    width: 100% !important;
+  }
+}
 @media screen and (max-height: 700px){
-
+  .ctax .button{
+    display: flex;
+    justify-content: center;
+  }
+  
+  .ctax .button button{
+    padding: 5px;
+    width: 40%;
+  }
+  .ctax .column{
+    width: 100% !important;
+    background: whitesmoke;
+  }
+  .ctax .innerheader{
+    display: flex !important;
+    width: 100%;
+    margin: 10px 0px;
+  }
+  .innerheader h1{
+    font-size: large;
+    transform: scale(1.2);
+  }
+  .ctax p{
+    margin: 0 auto !important;
+    margin-bottom: 10px !important;
+  }
+  .transparent {
+    height: 170px;
+    top: 60% !important;
+  }
+ .transparent .items {
+   display: block !important;
+   width: 100% !important;
+   height: 35px !important;
+ }
+  .items .block1{
+    width: 100%;
+  }
+  .block2{
+    margin-top: 10px;
+    width: 100%;
+    background: red;
+  }
+  .block2 .inputfield{
+    width: 100% !important;
+  }
+  .block2 .findBtn{
+      display: none !important;
+  }
+  .block3{
+    display: none;
+    width: 100%;
+    height: 100%;
+  }
+  .block4{
+    margin-top: 26px;
+    width: 100% !important;
+  }
   .hero{
     width: 100% !important;
   }

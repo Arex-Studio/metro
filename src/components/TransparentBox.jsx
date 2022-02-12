@@ -1,5 +1,6 @@
 import Selector from "./Selector"
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCoffee, faSearch } from '@fortawesome/free-solid-svg-icons'
 let TransparentBox = ()=>{
     return(
         <div className="transparent">
@@ -7,10 +8,10 @@ let TransparentBox = ()=>{
             <div className="items">
                 <div className="block1">
                     <div id="selector">
-                        <Selector options={'test'}/>
+                        <Selector options={['Buy']}/>
                     </div>
                     <div id="selector">
-                        <Selector options={'test'}/>
+                        <Selector options={['Completion Status']}/>
                     </div>
                 </div>
                 <div className="block2">
@@ -20,13 +21,31 @@ let TransparentBox = ()=>{
             <div className="items">
                 <div className="block3">
                     <div id="selector">
-                        <Selector options={'test'}/>
+                        <Selector options={['Select Property Type']}/>
                     </div>
 
                 </div>
                 <div className="block4">
                      <div className="multi">
-                         <Selector options={"ss"}/>
+                         <div id="selector">
+                             <Selector options={["Min Area"]}/>
+                         </div>
+                         <div id="selector">
+                             <Selector options={["Max Area"]}/>
+                         </div>
+                         <div id="selector">
+                             <Selector options={["Min BedRooms"]}/>
+                         </div>
+                         <div id="selector">
+                             <Selector options={["Max BedRooms"]}/>
+                         </div>
+                         <div id="selector">
+                             <Selector options={["Min. Price"]}/>
+                         </div>
+                         <div id="selector">
+                             <Selector options={["Max. Price"]}/>
+                         </div>
+                        
                      </div>
                 </div>
             </div>
@@ -38,7 +57,8 @@ let Search = ()=>{
     return(
         <div className="search">
         <div className="inputfield">
-                    <input type="text" placeholder="Location, Community , City"/>
+            <FontAwesomeIcon icon={faSearch} color={'red'}/>
+                    <input style={{marginLeft:'5px'}} type="text" placeholder="Location, Community , City"/>
                 </div>
                 <div className="findBtn">
                     <div className="fill"></div>

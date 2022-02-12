@@ -14,7 +14,9 @@ Metropolitan Premium Properties is one of the largest & trusted leading Real Est
 
 Our evaluation specialists will make an extensive calculation, taking into account a plethora of criteria, such as location, prospective of the area development, rental potential, facilities and recreational attractions, etc.
 If you are thinking about investing in Dubai, we will be delighted to guide you through the whole process from start to finish, so you can relax and let us take care of all the formalities and paperwork that is associated with purchasing a property in the UAE. Let us make this process easy and pleasant for you</p>
-            <button>Request Valuation</button>
+            <div className="button">
+                <button>Request Valuation</button>
+            </div>
             </div>
         </div>
     )

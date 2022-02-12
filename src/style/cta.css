@@ -19,7 +19,7 @@
     width: 100px;
     margin-left: 10px;
     height: 2px;
-    background: #02b2ee;
+    background: #ff0000;
 }
 .column{
     display: flex;
@@ -34,7 +34,7 @@
 
 }
 .column button{
-    background: #02b2ee;
+    background: #ff0000;
     border: none;
     outline: none;
     color: white;

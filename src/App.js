@@ -15,6 +15,9 @@ import MobileNavBar from './sections/MobileNavbar';
 
 function App() {
   let [mobileNav,setMobileNav] = useState(false)
+  useEffect(()=>{
+   
+  })
   return (
     <div className="App">
       {!mobileNav && <HeroSection onNavBarOpen={()=>setMobileNav(true)}/>}

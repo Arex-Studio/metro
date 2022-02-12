@@ -3,7 +3,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 60%;
+    width: 50%;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
@@ -65,7 +65,7 @@
     position: relative;
     width: 30%;
     height: 100%;
-    z-index: -1;
+    z-index: 1;
 }
 .block3 #selector{
     position: relative;
@@ -79,7 +79,12 @@
 }
 .block4 .multi{
     position: relative;
+    display: flex;
+    justify-content: space-evenly;
     height: 100%;
+}
+.block4 .multi #selector{
+    width: 20%;
 }
 .block2 .search {
     position: relative;
@@ -97,7 +102,7 @@
 }
 .findBtn{
     position: relative;
-    background: #02b2ee;
+    background: #ff0000;
     height: 100%;
     width: 10%;
 
@@ -107,7 +112,7 @@
 }
 .findBtn .fill{
     position: absolute;
-    background: rgb(50, 159, 231);
+    background:#a82525c7;
     height: 100%;
     width: 0%;
     left: 0%;

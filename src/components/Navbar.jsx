@@ -1,4 +1,4 @@
-import logo from '../assets/logo.png'
+import logo from '../assets/logo2.png'
 import DropDown from './dropdown'
 import navigations from '../data/navigation.json'
 import Avatar from './Avatar'

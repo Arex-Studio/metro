@@ -4,7 +4,7 @@ import TransparentBox from '../components/TransparentBox'
 import '../style/hero.css'
 let HeroSection = ({onNavBarOpen})=>{
     return(
-        <section style={{backgroundImage: `url(https://metropolitan.realestate/wp-content/uploads/2021/11/mpp-header.jpg)`}} className="hero">
+        <section style={{backgroundImage: `url(https://axproperty.com/wp-content/uploads/2020/10/1e902e8d-fbb2-47dc-93cc-70163e717dbc.jpg)`}} className="hero">
             <NavBar onNavBarOpen={onNavBarOpen}/>
             <TransparentBox/>
         </section>

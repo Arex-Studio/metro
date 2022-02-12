@@ -50,7 +50,9 @@ let CarosalView = ({rent=false,expanding = true})=>{
         infinite: true,
         speed: 500,
         slidesToShow: toShow,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        prevArrow: <SamplePrevArrow />,
+        nextArrow: <SamplePrevArrow/>
       };
     useEffect(()=>{
       if(window.innerWidth < 1200 && window.innerWidth > 800){
@@ -93,5 +95,15 @@ let CarosalView = ({rent=false,expanding = true})=>{
               </Slider>
         </div>
     )
+}
+function SamplePrevArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{ ...style, display: "flex", background: "#ff0000", borderRadius:'50%',alignItems:'center',justifyContent:'center'}}
+      onClick={onClick}
+    />
+  );
 }
 export default CarosalView
