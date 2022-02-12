@@ -586,6 +586,15 @@ h1{
   }
 }
 @media screen and (max-width: 600px){
+  
+  .cardimage{
+    transform: scale(1);
+  }
+  .cardimage h2{
+    width: 80%;
+    margin-left: 2px;
+   font-size: medium;
+  }
   .ofplan .header{
    width: 100% !important;
   }
