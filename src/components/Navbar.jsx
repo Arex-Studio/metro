@@ -4,6 +4,7 @@ import navigations from '../data/navigation.json'
 import Avatar from './Avatar'
 import heart from '../assets/heart.PNG'
 import wapp from '../assets/wapp.PNG'
+import Menubar from './menubar'
 let NavBar = ({onNavBarOpen})=>{
     let set = [ <DropDown title={"Areas"} items={navigations.areas}/>,
                 <DropDown title={"Projects"} items={navigations.projects}/>,
@@ -14,7 +15,7 @@ let NavBar = ({onNavBarOpen})=>{
               ]
     return(
         <nav>
-            <img onClick={onNavBarOpen} src={logo} alt="" />
+            <img  src={logo} alt="" />
             <div className="n1">
                 <a href='/'>Buy</a>
                 <a href='/'>Sell</a>
@@ -24,6 +25,9 @@ let NavBar = ({onNavBarOpen})=>{
                 <Avatar img={heart}/>
                 <Avatar onClick={onNavBarOpen} img={wapp} background="green"/>
                 <h1>+971 317 27209</h1>
+            </div>
+            <div className="n3">
+             <Menubar onClick={onNavBarOpen}/>
             </div>
         </nav>
     )

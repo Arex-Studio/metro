@@ -5,6 +5,7 @@
     height: 55vh;
     background: #f9f9f9;
     margin-bottom: 10vh;
+    overflow: hidden;
 }
 .cta img{
     width: 40%;

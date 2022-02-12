@@ -8,8 +8,8 @@ let MobileNavBar = ({onClose})=>{
             <nav>
                 <div className="logo"><img src={lf} alt="" /></div>
                 <div className="option">
-                    <Avatar background='whitesmoke' img={wapp}/>
-                    <Avatar background='whitesmoke' img={wapp}/>
+                    {false&&<Avatar background='whitesmoke' img={wapp}/>}
+                    {false &&<Avatar background='whitesmoke' img={wapp}/>}
                     <h1 onClick={onClose}>X</h1>
                 </div>
             </nav>

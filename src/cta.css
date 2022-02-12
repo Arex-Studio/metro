@@ -1,0 +1,44 @@
+.ctax{
+    width: 100%;
+    display: flex;
+    padding-bottom: 50px;
+    background: whitesmoke;
+    overflow: hidden;
+    margin: 0 auto;
+
+}
+.ctax img{
+    width: 30%;
+}
+.ctax p{
+    width: 80%;
+}
+@media screen and (max-width:1200px) {
+    .ctax img{
+        width: 40% !important;
+    }    
+}
+@media screen and (max-width:850px) {
+    .ctax {
+        flex-direction: column;
+        margin-top: 30vh;
+    }
+    .ctax .column{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .ctax img{
+        width: 100% !important;
+        min-height: 10vh !important;
+    }
+    .ctax .innerheader{
+        display: flex;
+       align-items: center;
+       font-size: small !important;
+        width: 100%;
+    }
+    .ctax p{
+        width: 80% !important;
+        text-align: center;
+    }
+}

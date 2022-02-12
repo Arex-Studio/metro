@@ -1,4 +1,6 @@
 .buying{
+    position: relative;
+    margin-top: 5px;
     width: 80%;
     min-height: 65vh;
     margin: 0 auto;

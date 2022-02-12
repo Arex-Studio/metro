@@ -1,16 +1,70 @@
 @import url('http://fonts.cdnfonts.com/css/gotham');
-
+html {
+  scroll-behavior: smooth;
+}
 body{
   padding: 0;
   margin: 0;
   font-family: 'Gotham', sans-serif;
+  overflow-x: hidden;
+}
+
+.spacer{
+  display: none;
+}
+.n3 {
+  display: none;
+}
+.row1 .item1{
+  width: 7%;
+  height: 60%;
+}
+.row1 .item2{
+  width: 20%;
+  height: 60%;
+}
+.row1 .rowitem1 {
+  width: 17%;
+  height: 60%;
+
+}
+.row1 .rowitem2{
+  display: flex;
+  justify-content: space-evenly !important;
+  width: 70%;
+  margin-left: 10px;
+  height: 60%;
+}
+.rowitem2 .itemy{
+  width: 17%;
+  height: 100%;
+
+}
+.rowitem2 .itemz{
+  width: 17%;
+  height: 100%;
+  margin-left: 2px;
+  background: white;
+}
+.menubar{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+}
+.bar{
+  width: 100%;
+  height: 25%;
+  background: white;
 }
 nav{
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 30px;
+  padding: 30px 0px;
 }
 nav h1{
   color: white;
@@ -27,7 +81,7 @@ nav h1{
 .drop .menu{
   display: none;
   cursor: pointer;
-  z-index: 10;
+  z-index: 2;
 }
 .drop:hover .menu{
   position: absolute;
@@ -92,6 +146,7 @@ nav h1{
   display: flex;
   align-items: center;
   color: white;
+  width: 50% !important;
   margin-left: 10px;
 }
 .n1 h1, .n1 a{
@@ -116,6 +171,7 @@ label{
   z-index: -1;
 }
 nav{
+  width: 100% !important;
   background: none;
 }
 nav img{
@@ -129,7 +185,7 @@ h1{
 .n2{
   display: flex;
   align-items: center;
-  margin-left: 300px;
+  margin-left:10%;
 }
 .n2 .avatar{
   padding: 10px;
@@ -304,7 +360,7 @@ h1{
 
 
 
-@media screen and (max-width: 1551px) {
+@media screen and (max-width: 1183px) {
   nav img{
      width: 200px;
   }
@@ -318,11 +374,25 @@ h1{
     display: none;
   }
 }
+@media screen and (max-width: 1383px) {
+  nav img{
+     width: 200px;
+  }
+  nav {
+    justify-content: flex-start;
+  }
+  .n1{
+    width: 80% !important;
+  }
+  .n2{
+    width: 80% !important;
+  }
+}
 
 @media screen and (max-width: 1244px) {
    .cta{
      display: block !important;
-     height: 130vh !important;
+     height: 130vh;
    }
    .cta img{
      width: 100% !important;
@@ -352,12 +422,56 @@ h1{
    }
 }
 
-@media screen and (max-width: 735px){
-  
+@media screen and (max-width: 1062px){
+  .n3{
+    display: block;
+    position: relative;
+    left: 70%;
+    }
+}
+@media screen and (max-width: 850px){
+  .n3{
+    display: block;
+    position: relative;
+    left: 60%;
+    }
 }
 
-
-
+@media screen and (max-width: 735px){
+  .n3{
+    display: block;
+    position: relative;
+    left: 40%;
+    }
+  .feature{
+    height: 159vh !important;
+    margin-bottom: 3%;
+    margin-left: 10px;
+  }
+  .cardimage{
+    width: 110%;
+  }
+  .card{
+    width: 30%;
+  }
+}
+@media screen and (max-width: 600px){
+  .n3{
+    display: block;
+    position: relative;
+    left: 40%;
+    }
+  .feature{
+    margin-bottom: 100px;
+    margin-left: 10px;
+  }
+  .cardimage{
+    width: 110%;
+  }
+  .card{
+    width: 60%;
+  }
+}
 @media screen and (max-width: 735px) {
   .fr2{
     display: flex;
@@ -400,7 +514,6 @@ h1{
   .cta {
     width: 100% !important;
     flex-direction: column;
-    height: 100vh !important;
   }
   .cta img{
     width: 100% !important;
@@ -422,10 +535,13 @@ h1{
 }
 @media screen and (max-width: 403px){
   .feature{
-    height: 160vh !important;
+    height: 200vh !important;
   }
   .header{
     transform: scale(1.1);
+  }
+  .buying{
+    top: 100%;
   }
   .about{
     height: 140vh !important;
@@ -504,4 +620,66 @@ h1{
     width: 90% !important;
     text-align: justify !important;
   }
+}
+@media screen and (max-height: 1700px){
+  .cta{
+    height: 100vh !important;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .cta{
+
+    height: 0vh !important;
+  }
+}
+@media screen and (max-height: 1400px){
+  .cta{
+    height: 100vh !important;
+  }
+  .cardimage .bottom h3{
+    position: absolute;
+    margin-top: 30%;
+  }
+}
+
+@media screen and (max-height: 700px){
+
+  .hero{
+    width: 100% !important;
+  }
+  #heroimg{
+    width: 100%;
+  }
+  nav img{
+    margin-left: 10px;
+  }
+  .n3{
+    display: block;
+    left: 18%;
+  }
+  .feature h1{
+    font-size: 20px;
+  }
+  .buying{
+    margin-top: 50px !important;
+  }
+  .buying .header .title{
+    width: 100%;
+  }
+  .buying .header h1{
+    width: 100%;
+  }
+ 
+  .about .header h1{
+    width: 40%;
+  }
+  .spacer{
+    display: block;
+    height: 15vh;
+  }
+}
+
+.uper{
+  position: relative !important;
+  z-index: 10 !important;
 }

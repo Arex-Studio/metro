@@ -2,7 +2,7 @@ import '../style/cta.css'
 import cta from '../assets/cta.jpg'
 let CTA = ()=>{
     return (
-        <div className="cta">
+        <div className="ctax">
             <img src={cta} alt="" />
             <div className="column">
                 <div className="innerheader">
