@@ -4,7 +4,7 @@ import '../style/buying.css'
 
 let Offplan = ()=>{
     return(
-        <div className="buying">
+        <div className="buying ofplan">
              <Header title={"Offplan Latest Launches"}/>
             <div className="list">
             <CarosalView rent={true} expanding={false}/>
