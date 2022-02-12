@@ -1,5 +1,5 @@
 import '../style/mobilenav.css'
-import lf from '../assets/lf.svg'
+import lf from '../assets/logo2.png'
 import wapp from '../assets/wapp.PNG'
 import Avatar from '../components/Avatar'
 let MobileNavBar = ({onClose})=>{

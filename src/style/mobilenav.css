@@ -3,6 +3,7 @@
     width: 100%;
     height: 100vh;
     background: whitesmoke;
+    overflow: hidden !important;
 }
 .mobilenav nav{
     display: flex;
