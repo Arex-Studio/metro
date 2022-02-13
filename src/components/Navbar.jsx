@@ -5,6 +5,8 @@ import Avatar from './Avatar'
 import heart from '../assets/heart.PNG'
 import wapp from '../assets/wapp.PNG'
 import Menubar from './menubar'
+import { faHeart} from '@fortawesome/free-solid-svg-icons'
+import {faWhatsapp} from '@fortawesome/free-brands-svg-icons'
 let NavBar = ({onNavBarOpen})=>{
     let set = [ <DropDown title={"Areas"} items={navigations.areas}/>,
                 <DropDown title={"Projects"} items={navigations.projects}/>,
@@ -24,11 +26,13 @@ let NavBar = ({onNavBarOpen})=>{
                  {set}
             </div>
             <div className="n2">
-                <Avatar img={heart}/>
-                <Avatar onClick={onNavBarOpen} img={wapp} background="green"/>
-                <h1 className='nv'>+971 317 27209</h1>
+                <Avatar icon={faHeart}/>
+                <Avatar onClick={onNavBarOpen} icon={faWhatsapp} background="green"/>
+                <h1 className='nv number'>+971 317 27209</h1>
             </div>
             <div className="n3">
+                <Avatar icon={faHeart}/>
+                <Avatar onClick={onNavBarOpen} icon={faWhatsapp} background="green"/>
              <Menubar onClick={onNavBarOpen}/>
             </div>
         </nav>

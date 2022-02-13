@@ -1,0 +1,23 @@
+.bottombar{
+    position: fixed;
+    bottom: 0%;
+    height: 8vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    z-index: 100;
+}
+.bottombar .left,.bottombar .right{
+    width: 50%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bottombar .left{
+    background: cyan;
+    color: white;
+}
+.bottombar .right{
+    background: greenyellow;
+}

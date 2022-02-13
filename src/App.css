@@ -14,6 +14,16 @@
 }
 
 
+.n3 .avatar{
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transform: scale(1.2);
+  margin-right: 20px;
+}
 html {
   scroll-behavior: smooth;
 }
@@ -514,7 +524,8 @@ h1{
     display: none;
   }
   .n3{
-    display: block;
+    display: flex !important;
+    align-items: center !important;
   }
 }
 @media screen and (max-width: 1383px) {
@@ -522,7 +533,7 @@ h1{
      width: 200px;
   }
   nav {
-    justify-content: space-between;
+    justify-content: space-around;
   }
   .n1{
     display: none;
@@ -533,7 +544,9 @@ h1{
     width: 80% !important;
   }
   .n3{
-    display: block;
+    display: flex !important;
+    align-items: center !important;
+    margin-left: 30%;
   }
   .feature{
 
@@ -628,17 +641,17 @@ h1{
      left: 13%;
   }
   .n3{
-    position: relative;
-    right: 13%;
+    display: flex !important;
+    align-items: center !important;
   }
 }
 
 
 @media screen and (max-width: 850px){
   .n3{
-    display: block;
-    position: relative;
-    }
+    display: flex !important;
+    align-items: center !important;
+  }
   .n2,.n1{
     display: none;
   }
@@ -647,9 +660,9 @@ h1{
 
 @media screen and (max-width: 735px){
   .n3{
-    display: block;
-    position: relative;
-    }
+    display: flex !important;
+    align-items: center !important;
+  }
   .n2,.n1{
     display: none;
   }
@@ -665,6 +678,12 @@ h1{
   }
 }
 @media screen and (max-width: 600px){
+  nav img{
+    margin-right: 50px !important;
+  }
+  .n3{
+    margin-right: 45px !important;
+  }
  .feature{
   margin-bottom: 15% !important;
  }
@@ -679,13 +698,12 @@ h1{
   }
 
   .card {
-    min-height: 100px;
     margin: 0px !important;
   }
   .fr2{
     width: 100% !important;
     grid-template-columns: 1fr !important;
-    grid-gap: 0 !important;
+    grid-gap: 16 !important;
   }
   .feature{
     width: 80% !important;
@@ -696,14 +714,13 @@ h1{
     width: 100%;
   }
   .card{
-    height: 80px !important;
     width: 80% !important;
     padding-top: 10% !important;
     padding: 10%;
     margin: 0 auto;
   }
 }
-@media screen and (max-width: 735px) {
+@media screen and (max-width: 735px) { 
   .fr2{
     transform: scale(1);
   }
@@ -721,9 +738,10 @@ h1{
     border:1px #FFD700 solid;
     cursor: pointer;
     background: none;
+    width: 200px;
     color: #FFD700;
     transition: 0.7s;
-    padding: 10px 30px;
+    padding: 5px 5px;
   }
   .headerx button:hover{
     background: #FFD700;
@@ -745,10 +763,9 @@ h1{
     width: 100% !important;
   }
   .fr2{
-    display: flex;
-    flex-direction: column;
+   
   }
-  .card{
+  .card{  
     margin-bottom: 30px;
   }
   .feature{
@@ -886,7 +903,6 @@ h1{
     margin: 0px !important;
     width: 100%;
     padding: 0px !important;
-    background: red;
     margin-left: -20px !important;
   }
   .block2 .inputfield{
@@ -914,33 +930,15 @@ h1{
   }
 }
 @media screen and (max-width: 600px){
-  .b .header,.r .header{
-    margin-bottom: 20px !important;
-    width: 80% !important;
-    margin-left: 5% !important;
-  }
+  
   .ofplan ,.r,.b{
      min-height: 100px !important;
      margin-bottom: 10% !important;
   }
   .b,.r,.ofplan{
-    width: 98% !important;
+    width: 90% !important;
   }
   
-  .ofplan .header{
-    width: 10% !important;
-  }
-  .b .header h1{
-    width: 100% !important;
-    padding: 0;
-  }
-  .pop .header{
-    width: 80% !important;
-  }
-  .pop .header h1{
-    width: 84% !important;
-  }
-
   .spacer2{
     margin-top: 150px;
   }
@@ -971,12 +969,10 @@ h1{
   .spacer{
     margin-bottom: 150px;
   }
-  .card{
-    width: 100%;
-    height: 6% !important;
-  }
+
   .n3{
-    transform: scale(0.7);
+    display: flex !important;
+    align-items: center !important;
   }
     nav img{
       width: 8%;
@@ -1101,7 +1097,8 @@ h1{
     margin-left: 10px;
   }
   .n3{
-    display: block;
+    display: flex !important;
+    align-items: center !important;
   }
   .feature h1{
     font-size: 20px;
@@ -1192,7 +1189,6 @@ h1{
     margin: 0px !important;
     width: 100%;
     padding: 0px !important;
-    background: red;
     margin-left: 0px !important;
   }
 }

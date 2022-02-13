@@ -13,6 +13,7 @@ import Footer from './sections/Footer';
 import { useEffect, useState } from 'react';
 import MobileNavBar from './sections/MobileNavbar';
 import * as $ from 'jquery'
+import BottomBar from './sections/bottomBar';
 function App() {
   let [mobileNav,setMobileNav] = useState(false)
   useEffect(()=>{
@@ -40,15 +41,16 @@ function App() {
   },[])
   return (
     <div className="App">
-       <HeroSection/>
+       <HeroSection/> 
        <Features/>
-       <Buying/>
-       <Renting/>
+      <Buying/>
+      <Renting/>
        <Offplan/>
        <Popular/>
        <About/>
        <CTA/>
-       <Footer/>
+       {false &&<Footer/>}
+       <BottomBar/>
     </div>
   );
 }

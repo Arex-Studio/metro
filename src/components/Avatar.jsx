@@ -1,8 +1,8 @@
-
-let Avatar = ({img,background="red", onClick})=>{
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+let Avatar = ({icon,background="red", onClick})=>{
     return(
         <div onClick={onClick} className="avatar" style={{background:background}}>
-            <img src={img} />
+            <FontAwesomeIcon icon={icon} color={'white'}/>
         </div>
     )
 }
