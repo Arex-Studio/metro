@@ -1,5 +1,6 @@
 import '../style/footer.css'
 import logo from '../assets/lf.svg'
+import Icon from '../components/Icon'
 let Footer = ()=>{
     return(
         <div className="footer">
@@ -46,6 +47,19 @@ let Footer = ()=>{
                         <li>Properties in Cyprus</li>
                         <li>Properties in UK</li>
                     </ul>
+                </div>
+                <div className="col4">
+                    <div className="icons">
+                        <Icon/>
+                        <Icon/>
+                        <Icon/>
+                        <Icon/>
+                        <Icon/>
+                    </div>
+                    <div className="halfBtn">
+                        <div className="leftHalf">SQ FT</div>
+                        <div className="rightHalf">SQ M</div>
+                    </div>
                 </div>
             </div>
             <hr />
