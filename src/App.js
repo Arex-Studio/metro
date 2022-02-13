@@ -40,16 +40,16 @@ function App() {
   },[])
   return (
     <div className="App">
-      {!mobileNav && <HeroSection onNavBarOpen={()=>setMobileNav(true)}/>}
-      {mobileNav && <MobileNavBar onClose={()=>setMobileNav(false)}/>}
-      {!mobileNav && <Features/>}
-      {!mobileNav  && <Buying/>}
-      {!mobileNav   && <Renting/>}
-      {!mobileNav  && <Offplan/>}
-      {!mobileNav  && <Popular/>}
-      {!mobileNav  && <About/>}
-      {!mobileNav  && <CTA/>}
-      {!mobileNav  && <Footer/>}
+       <HeroSection/>
+      <MobileNavBar/>
+       <Features/>
+       <Buying/>
+       <Renting/>
+       <Offplan/>
+       <Popular/>
+       <About/>
+       <CTA/>
+       <Footer/>
     </div>
   );
 }
