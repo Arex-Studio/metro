@@ -33,10 +33,10 @@ let Popular = ()=>{
                      </div>
                  </div>
                  <div className="img">
-                     <img src={g1} alt="" />
+                     <img src={g3} alt="" />
                  </div>
                  <div className="img">
-                     <img src={g4} alt="" />
+                     <img src={g1} alt="" />
                  </div>
                  <div className="img">
                      <img src={g3} alt="" />

@@ -137,7 +137,13 @@
     color: white;
     z-index: 10;
 }
-
+.block4{
+    z-index: 2;
+}
+.block3{
+    position: relative;
+    z-index: 3;
+}
 .block4 #selector:nth-child(1){
     position: relative;
     z-index: 11;
