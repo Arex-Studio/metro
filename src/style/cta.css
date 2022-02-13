@@ -19,7 +19,7 @@
     width: 100px;
     margin-left: 10px;
     height: 2px;
-    background: #ff0000;
+    background: #FFD700;
 }
 .column{
     display: flex;
@@ -28,16 +28,18 @@
     width: 50%;
 }
 .column p{
-    width: 60%;
+    width: 90%;
     margin-left: 3%;
     line-height: 1.5;
+    text-align: justify;
 
 }
 .column button{
-    background: #ff0000;
+    background: #FFD700;
     border: none;
     outline: none;
     color: white;
+    font-weight: bold;
     width: 30%;
     padding: 10px 0px;
     margin-left: 3%;

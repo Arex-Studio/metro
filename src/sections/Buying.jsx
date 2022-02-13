@@ -4,7 +4,7 @@ import '../style/buying.css'
 
 let Buying = ()=>{
     return(
-        <div className="buying">
+        <div className="buying b">
             <Header title={"Buying Properties in Dubai"}/>
             <div className="list">
             <CarosalView/>

@@ -2,16 +2,31 @@
     position: relative;
     margin-top: 5px;
     width: 80%;
-    min-height: 65vh;
+    min-height: 30vh;
     margin: 0 auto;
 }
 .buying .list{
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 85%;
     margin: 0 auto;
 }
 .carosalview{
     width: 100%;
+}
+.buying .header{
+    width: 85%;
+    margin: 0 auto;   
+}
+.carosalview .arrowholder{
+    position: absolute;
+    right: 90%;
+    z-index: 100;
+}
+.arrow{
+     position: absolute;
+     z-index: 100;
+     left: 98%;
 }

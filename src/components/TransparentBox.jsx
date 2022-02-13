@@ -1,7 +1,11 @@
 import Selector from "./Selector"
+import {useEffect} from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCoffee, faSearch } from '@fortawesome/free-solid-svg-icons'
 let TransparentBox = ()=>{
+   useEffect(()=>{
+        alert(window.innerWidth)
+   },[])
     return(
         <div className="transparent">
             <h1>Find Property in Dubai</h1>
@@ -48,6 +52,12 @@ let TransparentBox = ()=>{
                         
                      </div>
                 </div>
+                <div className="block5">
+                    <div onClick={()=>alert('ss')} className="bfind">
+                        <div className="fill"></div>
+                        <h2>Find</h2>
+                    </div>
+                </div>
             </div>
             
         </div>
@@ -57,7 +67,7 @@ let Search = ()=>{
     return(
         <div className="search">
         <div className="inputfield">
-            <FontAwesomeIcon icon={faSearch} color={'red'}/>
+            <FontAwesomeIcon icon={faSearch} color={'#FFD700'}/>
                     <input style={{marginLeft:'5px'}} type="text" placeholder="Location, Community , City"/>
                 </div>
                 <div className="findBtn">

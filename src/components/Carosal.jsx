@@ -4,6 +4,8 @@ import "react-multi-carousel/lib/styles.css";
 import Slider from "react-slick";
 import image from '../assets/logo.png'
 import CardImage from "./CardImage";
+import rightArrow from '../assets/arrow.PNG'
+import leftArrow from '../assets/leftArrow.PNG'
 /*
 <Carousel responsive={responsive}
                     showDots={false}
@@ -50,9 +52,10 @@ let CarosalView = ({rent=false,expanding = true})=>{
         infinite: true,
         speed: 500,
         slidesToShow: toShow,
+        arrow:false,
         slidesToScroll: 1,
         prevArrow: <SamplePrevArrow />,
-        nextArrow: <SamplePrevArrow/>
+        nextArrow: <SampleNextArrow/>
       };
     useEffect(()=>{
       if(window.innerWidth < 1200 && window.innerWidth > 800){
@@ -60,7 +63,7 @@ let CarosalView = ({rent=false,expanding = true})=>{
       }else if(window.innerWidth < 800){
         setShow(1)
       }else{
-        setShow(4)
+        setShow(3 )
       }
       window.addEventListener('resize',e=>{
 
@@ -69,12 +72,12 @@ let CarosalView = ({rent=false,expanding = true})=>{
         }else if(window.innerWidth < 800){
           setShow(1)
         }else{
-          setShow(4)
+          setShow(3)
         }
       })
     },[])
     return(
-        <div className="carosalview">
+        <div  className="carosalview">
             <Slider {...settings}>
             <CardImage rent={rent} expanded={expanding}/>
             <CardImage rent={rent} expanded={expanding}/>
@@ -101,9 +104,23 @@ function SamplePrevArrow(props) {
   return (
     <div
       className={className}
-      style={{ ...style, display: "flex", background: "#ff0000", borderRadius:'50%',alignItems:'center',justifyContent:'center'}}
+      style={{ ...style, display: "flex", borderRadius:'50%',alignItems:'center',justifyContent:'center'}}
       onClick={onClick}
-    />
+    >
+      <img src={leftArrow} alt="" />
+    </div>
+  );
+}
+function SampleNextArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{ ...style, display: "flex", borderRadius:'50%',background:'white',alignItems:'center',justifyContent:'center'}}
+      onClick={onClick}
+    >
+      <img src={rightArrow} alt="" />
+    </div>
   );
 }
 export default CarosalView

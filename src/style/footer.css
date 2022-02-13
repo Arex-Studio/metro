@@ -3,6 +3,7 @@
     width: 100%;
     height: 70vh;
     margin: 10px auto;
+    
 }
 .news{
     display: flex;
@@ -32,9 +33,11 @@
 }
 .links{
     margin-top: 2%;
+    width: 90%;
+    margin: 0 auto;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
 }
 li{
     text-decoration: none;
@@ -44,7 +47,7 @@ li{
 }
 li:hover{
     cursor: pointer;
-    color:#ff0000;
+    color:#FFD700;
 }
 .col1,.col2,.col3{
     margin-left: 10%;

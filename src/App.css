@@ -1,15 +1,115 @@
 @import url('http://fonts.cdnfonts.com/css/gotham');
+
+@font-face {
+  font-family: "GothamBold";
+  src: url("./fonts/Gotham/GothamPro-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "GothamLight";
+  src: url("./fonts/Gotham/GothamPro-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "GothamPro";
+  src: url("./fonts/Gotham/GothamPro.ttf") format("truetype");
+}
+
+
 html {
   scroll-behavior: smooth;
 }
+.cardimage{
+  padding: 0.3%;
+}
+.fr2{
+  transform: scale(0.8);
+}
+.cardimage .bar{
+  margin-top: 10px  ;
+  transform: scale(0.9);
+}
+.cardimage .bar .col{
+  margin-left: 5%;
+}
+.cardimage .bar .image{
+  transform: scale(1.2);
+}
+.cardimage h2{
+  color: #333 !important;
+  margin-top: 7% !important;
+  width: 98%;
+  margin-left: 2% !important;
+}
+.cardimage h4{
+  margin-top: 1% !important;
+  width: 98%;
+  margin-left: 2% !important;
+  opacity: 0.6 !important;
+}
+.cardimage .button button{
+  font-family: 'Gotham', sans-serif !important;
+  border-radius: 5px;
+}
+.cardimage .button h3{
+  padding: 4px 6px;
+  font-weight: bold;
+}
+.headerx{
+  width: 80%;
+  justify-content: space-between;
+  font-family: "GothamBold";
+  opacity: 0.9 !important;
+  color: #333;
+  display: flex;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  margin-top: 50px;
+}
 
+.headerx button{
+  position: relative;
+  border:3px #FFD700 solid;
+  cursor: pointer;
+  background: none;
+  color: #FFD700;
+  font-size: large;
+  font-weight: bold;
+  transition: 0.7s;
+  padding: 0px 100px;
+  transform: scale(0.7);
+}
+.headerx button:hover{
+  background: #FFD700;
+  color: white;
+}
+.headerx .titlex{
+  width: 50%;
+  color: #333;
+  display: flex;
+  align-items: center;
+}
+
+.headerx .l{
+  margin-left: 2%;
+  height: 2px;
+  width: 20%;
+  background: #FFD700;
+}
+.bfind{
+  display: none !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
 body{
   padding: 0;
   margin: 0;
   font-family: 'Gotham', sans-serif;
   overflow-x: hidden;
 }
-
+.transparent{
+  width: 70% !important;
+}
 .spacer{
   display: none;
 }
@@ -66,7 +166,9 @@ nav{
   align-items: center;
   justify-content: center;
   padding: 30px 0px;
+  z-index: 50;
 }
+
 nav h1{
   color: white;
 }
@@ -79,10 +181,16 @@ nav h1{
 .drop:hover{
   cursor: pointer;
 }
+
 .drop .menu{
   display: none;
   cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   z-index: 2;
+  min-height: 0px;
+}
+.drop .menu a{
+  width:fit-content;
 }
 .drop:hover .menu{
   position: absolute;
@@ -94,6 +202,18 @@ nav h1{
   margin-left: 20px;
   color: black !important;
   padding: 10px 120px 10px 10px ;
+  max-height: 0px;
+  overflow: hidden;
+  transition: 07s;
+  animation: fillup 3s ease-in-out forwards;
+}
+@keyframes fillup {
+  0%{
+    max-height: 0px;
+  }
+  100%{
+    max-height: 10000px;
+  }
 }
 .drop:hover .closed{
   display: block;
@@ -104,14 +224,19 @@ nav h1{
 .drop:hover .opened{
   display: none;
 }
+.nv{
+  transition: 2s;
+}
 .drop .title{
+  font-size: 13px;
+  font-weight: 100 !important;
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 .opened,.closed{
   font-weight: bold;
-  font-size: 1rem;
+  font-size: 13px;
 }
 .closed{
   display: none;
@@ -138,17 +263,17 @@ nav h1{
 }
 
 .menu a:hover{
-  color: #ff0000 !important;
+  color: #FFD700 !important;
 }
 .menu a:hover .line{
-  background: #ff0000;
+  background: #FFD700;
   width: 100%;
 }
 .n1{
   display: flex;
   align-items: center;
   color: white;
-  width: 50% !important;
+  width: 40% !important;
   margin-left: 10px;
 }
 .n1 h1, .n1 a{
@@ -156,6 +281,7 @@ nav h1{
   text-decoration: none;
   color: white;
   font-weight: bold;
+  font-size: 13px;
 }
 label{
   margin-left: 10px;
@@ -173,11 +299,22 @@ label{
   z-index: -1;
 }
 nav{
+  position: fixed;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   width: 100% !important;
-  background: none;
+  height: 10px;
+
 }
-nav img{
-  width: 5%;
+
+nav .img{
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+nav .img img{
+  width: 100%;
 }
 
 h1{
@@ -210,14 +347,15 @@ h1{
 }
 
 .card{
+  position: relative;
+  z-index: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 230px;
+  min-width: 230px;
   padding: 10px;
-  height: 200px;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 5px;
   margin-right: 30px;
 }
 .card img{
@@ -238,14 +376,16 @@ h1{
   margin-top: 2%;
 }
 .cardimage{
-  width: 80%;
+  width: 100%;
   height: 100%;
+  transform: scale(0.9);
 }
 
 .cardimage img{
   width: 100%;
   height: 100%;
 }
+
 .cardimage .bar{
   width: 100%;
   height: 60px;
@@ -270,7 +410,7 @@ h1{
  color: white;
 }
 .bottom h3{
-  background: #ff0000;
+  background: #FFD700;
   padding: 2px 20px;
 }
 .bar .image{
@@ -365,13 +505,16 @@ h1{
 @media screen and (max-width: 1183px) {
  
   nav {
-    justify-content: flex-start;
+    justify-content: center;
   }
   .n1{
     display: none;
   }
   .n2{
     display: none;
+  }
+  .n3{
+    display: block;
   }
 }
 @media screen and (max-width: 1383px) {
@@ -379,17 +522,37 @@ h1{
      width: 200px;
   }
   nav {
-    justify-content: flex-start;
+    justify-content: space-between;
   }
   .n1{
+    display: none;
     width: 80% !important;
   }
   .n2{
+    display: none;
     width: 80% !important;
+  }
+  .n3{
+    display: block;
+  }
+  .feature{
+
+  }
+  .card img{
+    width: 50px !important;
+    height: 50px !important;
+  }
+  .card h3, .card p{
+    
+  }
+  .fr2{
+    width: 100% !important;
+    grid-template-columns: 1fr 1fr !important;
+    margin-left: 2% !important;
   }
 }
 
-@media screen and (max-width: 1244px) {
+@media screen and (max-width: 1344px) {
    .cta{
      display: block !important;
      height: 130vh;
@@ -411,44 +574,86 @@ h1{
    .rowA {
      display: block !important;
    }
-   .pop{
-     height: 180vh !important;
-   }
+   
    .cardimage{
      transform: scale(0.8);
    }
    .header{
      transform: scale(0.7);
    }
-}
 
-@media screen and (max-width: 1062px){
-  nav img{
-    width: 8%;
-    margin-left: 10%;
+   .headerx{
+    width: 80%;
+    justify-content: space-between;
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+
+  .headerx button{
+    position: relative;
+    border:1px #FFD700 solid;
+    cursor: pointer;
+    background: none;
+    color: #FFD700;
+    transition: 0.7s;
+    padding: 10px 30px;
+  }
+  .headerx button:hover{
+    background: #FFD700;
+    color: white;
+  }
+  .headerx .titlex{
+    width: 50%;
+    display: flex;
+    align-items: center;
+  }
+  .headerx .l{
+    margin-left: 2%;
+    height: 2px;
+    width: 20%;
+    background: #FFD700;
+  }
+  .ctax .headerx {
+    display: none !important;
+  }
+  .b{
+    
+  }
+  .headerx h1{
+    font-size: large;
+  }
+  nav .img{
+     position: relative;
+     left: 13%;
   }
   .n3{
-    display: block;
     position: relative;
-    left: 70%;
-    }
+    right: 13%;
+  }
 }
+
+
 @media screen and (max-width: 850px){
   .n3{
     display: block;
     position: relative;
-    left: 60%;
     }
+  .n2,.n1{
+    display: none;
+  }
+  
 }
 
 @media screen and (max-width: 735px){
   .n3{
     display: block;
     position: relative;
-    left: 40%;
     }
+  .n2,.n1{
+    display: none;
+  }
   .feature{
-    height: 159vh !important;
     margin-bottom: 3%;
     margin-left: 10px;
   }
@@ -460,23 +665,85 @@ h1{
   }
 }
 @media screen and (max-width: 600px){
-  .n3{
-    display: block;
-    position: relative;
-    left: 40%;
-    }
+ .feature{
+  margin-bottom: 15% !important;
+ }
+ .ofplan{
+   padding-top: 3%;
+ }
+  .about .infocard {
+      width: 100% !important;
+  }
+  .ofplan .header h1{
+    width: 100% !important;
+  }
+
+  .card {
+    min-height: 100px;
+    margin: 0px !important;
+  }
+  .fr2{
+    width: 100% !important;
+    grid-template-columns: 1fr !important;
+    grid-gap: 0 !important;
+  }
   .feature{
-    margin-bottom: 100px;
+    width: 80% !important;
+    min-height: 90vh;
     margin-left: 10px;
   }
   .cardimage{
-    width: 110%;
+    width: 100%;
   }
   .card{
-    width: 60%;
+    height: 80px !important;
+    width: 80% !important;
+    padding-top: 10% !important;
+    padding: 10%;
+    margin: 0 auto;
   }
 }
 @media screen and (max-width: 735px) {
+  .fr2{
+    transform: scale(1);
+  }
+  .headerx{
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    margin-top: 100px;
+  }
+  .headerx button{
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%,20%);
+    border:1px #FFD700 solid;
+    cursor: pointer;
+    background: none;
+    color: #FFD700;
+    transition: 0.7s;
+    padding: 10px 30px;
+  }
+  .headerx button:hover{
+    background: #FFD700;
+    color: white;
+  }
+  .headerx .titlex{
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .headerx .l{
+    margin-left: 2%;
+    height: 2px;
+    width: 20%;
+    background: #FFD700;
+  }
+  .headerx h1{
+    font-size: large;
+    width: 100% !important;
+  }
   .fr2{
     display: flex;
     flex-direction: column;
@@ -485,7 +752,7 @@ h1{
     margin-bottom: 30px;
   }
   .feature{
-    height: 180vh;
+
   }
   .title h1{
     font-size: large;
@@ -496,9 +763,7 @@ h1{
   .cardimage{
     transform: scale(0.7);
   }
-  .pop{
-    height: 190vh !important;
-  }
+  
   .rowA {
     display:block !important;
     flex-direction: column;
@@ -512,9 +777,7 @@ h1{
   .infocard p{
     font-size: 0.8rem !important;
   }
-  .about{
-    height: 90vh;
-  }
+  
   .cta {
     width: 100% !important;
     flex-direction: column;
@@ -538,8 +801,9 @@ h1{
   }
 }
 @media screen and (max-width: 403px){
+  
   .feature{
-    height: 200vh !important;
+    
   }
   .header{
     transform: scale(1.1);
@@ -547,9 +811,7 @@ h1{
   .buying{
     top: 100%;
   }
-  .about{
-    height: 140vh !important;
-  }
+  
   .innerheader{
     transform: scale(0.8);
   }
@@ -585,8 +847,103 @@ h1{
     text-align: justify !important;
   }
 }
-@media screen and (max-width: 600px){
+
+@media screen and (max-width: 600px) and (max-height: 800px){
+  body{
+    display: block;
+  }
   
+  .bfind{
+    display: flex !important;
+    margin-top: 90px;
+    background: red !important;
+    width: 100% !important;
+    height: 30px !important;
+    color: white;
+
+  }
+  .bfind .fi{
+
+  }
+  .items{
+    flex-direction: column !important;
+    height: 80px !important;
+  }
+  .block1{
+    width: 100% !important;
+  }
+  .block1 #selector{
+    width: 50% !important;
+  }
+  .block2{
+    margin-top: 10px;
+    width: 100% !important;
+  }
+  .block2 .findBtn{
+    display: none;
+  }
+  .block2 .search{
+    margin: 0px !important;
+    width: 100%;
+    padding: 0px !important;
+    background: red;
+    margin-left: -20px !important;
+  }
+  .block2 .inputfield{
+    width: 100% !important;
+    z-index: 1;
+  }
+  .block3{
+    position: relative;
+    z-index: -1;
+   width: 100% !important;
+  }
+  .block4{
+    margin-top: 20px;
+    width: 80% !important;
+    z-index: -2;
+  }
+  .block4 .multi{
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    grid-gap: 10px;
+  }
+  .multi #selector{
+    width: 100% !important;
+    height: 30px !important;
+  }
+}
+@media screen and (max-width: 600px){
+  .b .header,.r .header{
+    margin-bottom: 20px !important;
+    width: 80% !important;
+    margin-left: 5% !important;
+  }
+  .ofplan ,.r,.b{
+     min-height: 100px !important;
+     margin-bottom: 10% !important;
+  }
+  .b,.r,.ofplan{
+    width: 98% !important;
+  }
+  
+  .ofplan .header{
+    width: 10% !important;
+  }
+  .b .header h1{
+    width: 100% !important;
+    padding: 0;
+  }
+  .pop .header{
+    width: 80% !important;
+  }
+  .pop .header h1{
+    width: 84% !important;
+  }
+
+  .spacer2{
+    margin-top: 150px;
+  }
   .cardimage{
     transform: scale(1);
   }
@@ -596,7 +953,7 @@ h1{
    font-size: medium;
   }
   .ofplan .header{
-   width: 100% !important;
+   width: 80% !important;
   }
   .ofplan .header h1{
     width: 80% !important;
@@ -609,7 +966,7 @@ h1{
     width: 100% !important;
   }
   .feature{
-    width: 100% !important;
+    width: 90% !important;
   }
   .spacer{
     margin-bottom: 150px;
@@ -619,23 +976,16 @@ h1{
     height: 6% !important;
   }
   .n3{
-    margin-left: 60%;
     transform: scale(0.7);
   }
     nav img{
       width: 8%;
       margin-left: 10%;
     }
-  .feature{
-
-    height: 130vh !important;
-  }
   .header{
     transform: scale(1.1);
   }
-  .about{
-    height: 100vh !important;
-  }
+  
   .innerheader{
     transform: scale(0.8);
   }
@@ -661,7 +1011,7 @@ h1{
     font-size: medium !important;
   }
   .hero{
-    height: 50vh;
+    height: 80vh;
   }
   .about p{
     width: 90% !important;
@@ -675,8 +1025,10 @@ h1{
 }
 @media screen and (max-width: 1300px) {
   .cta{
-
     height: 0vh !important;
+  }
+  .feature{
+    grid-template-columns: 1fr 1fr !important;
   }
 }
 @media screen and (max-height: 1400px){
@@ -696,7 +1048,7 @@ h1{
 }
 @media screen and (max-width: 1580px){
   .findBtn {
-    width: 100% !important;
+    width: 30% !important;
   }
 }
 @media screen and (max-height: 700px){
@@ -722,8 +1074,11 @@ h1{
     font-size: large;
     transform: scale(1.2);
   }
+
   .ctax p{
-    margin: 0 auto !important;
+    width: 100px !important;
+    margin-left: 30px !important;
+    text-align: justify !important;
     margin-bottom: 10px !important;
   }
   .transparent {
@@ -735,29 +1090,7 @@ h1{
    width: 100% !important;
    height: 35px !important;
  }
-  .items .block1{
-    width: 100%;
-  }
-  .block2{
-    margin-top: 10px;
-    width: 100%;
-    background: red;
-  }
-  .block2 .inputfield{
-    width: 100% !important;
-  }
-  .block2 .findBtn{
-      display: none !important;
-  }
-  .block3{
-    display: none;
-    width: 100%;
-    height: 100%;
-  }
-  .block4{
-    margin-top: 26px;
-    width: 100% !important;
-  }
+  
   .hero{
     width: 100% !important;
   }
@@ -769,13 +1102,9 @@ h1{
   }
   .n3{
     display: block;
-    left: 18%;
   }
   .feature h1{
     font-size: 20px;
-  }
-  .buying{
-    margin-top: 50px !important;
   }
   .buying .header .title{
     width: 100%;
@@ -796,4 +1125,90 @@ h1{
 .uper{
   position: relative !important;
   z-index: 10 !important;
+}
+
+
+@media screen and (max-height: 900px){
+  .transparent{
+    height: 30vh !important;
+  }
+ 
+}
+@media screen and (min-height: 973px){
+  .transparent{
+    height: 20vh !important;
+  }
+ 
+}
+@media screen and (min-height: 700px) and (max-width:700px){
+  .feature{
+    margin-bottom: 3% !important;
+  }
+  
+}
+@media screen and (max-height: 700px){
+  .transparent{
+    height: 46vh !important;
+  }
+  .items{
+    flex-direction: column !important;
+  }
+  .block1{
+    width: 100% !important;
+  }
+  .block1 #selector{
+    width: 50% !important;
+  }
+  .block2{
+    margin-top: 10px;
+    width: 100% !important;
+  }
+  .block2 .findBtn{
+    display: none;
+  }
+  .block2 .inputfield{
+    width: 100% !important;
+  }
+  .block3{
+    margin-top: 40px;
+    width: 100% !important;
+  }
+  .block4{
+    margin-top: 20px;
+    width: 100% !important;
+    margin-left: -0% !important;
+  }
+  .block4 .multi{
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    width: 100% !important;
+    grid-gap: 10px;
+  }
+  .multi #selector{
+    width: 100% !important;
+    height: 30px !important;
+  }
+  .block2 .search{
+    margin: 0px !important;
+    width: 100%;
+    padding: 0px !important;
+    background: red;
+    margin-left: 0px !important;
+  }
+}
+@media screen and (max-width: 700px) and (max-height: 950px) {
+    .spacer{
+      display: none;
+    }
+    nav{
+      justify-content: space-between;
+    }
+    
+    .ctax{
+      margin-top: 0% !important;
+    }
+    .ctax p{
+      text-align: justify !important;
+      margin-left: 7% !important;
+    }
 }

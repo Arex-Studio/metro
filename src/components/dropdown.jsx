@@ -3,7 +3,7 @@ import { useEffect } from "react"
 let DropDown = ({title,items})=>{
     let dropItems = []
     items.forEach((i,j)=>{
-        dropItems.push(<a key={j} href="">{i}<div className="line"></div></a>)
+        dropItems.push(<a  className='navitem' key={j} href="">{i}<div className="line"></div></a>)
     })
     useEffect(()=>{
         
@@ -11,9 +11,9 @@ let DropDown = ({title,items})=>{
     return(
         <div className="drop">
             <div className="title">
-                <label htmlFor="">{title}</label>
-                <div className="opened">^</div>
-                <div className="closed">^</div>
+                <label className="nv" htmlFor="">{title}</label>
+                <div className="opened nv">^</div>
+                <div className="closed nv">^</div>
             </div>
             <div className="menu">
             {dropItems}

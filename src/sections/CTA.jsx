@@ -1,6 +1,10 @@
 import '../style/cta.css'
 import cta from '../assets/cta.jpg'
+import { useEffect } from 'react'
 let CTA = ()=>{
+    useEffect(()=>{
+        alert(window.innerWidth)
+    },[])
     return (
         <div className="ctax">
             <img src={cta} alt="" />

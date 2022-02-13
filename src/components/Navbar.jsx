@@ -14,17 +14,19 @@ let NavBar = ({onNavBarOpen})=>{
                 <DropDown title={"EN"} items={navigations.lang}/>
               ]
     return(
-        <nav>
-            <img  src={logo} alt="" />
+        <nav className='navbar'>
+            <div className="img">
+                <img  src={logo} alt="" />
+            </div>
             <div className="n1">
-                <a href='/'>Buy</a>
-                <a href='/'>Sell</a>
+                <a className='navitem nv' href='/'>Buy</a>
+                <a className='navitem nv' href='/'>Sell</a>
                  {set}
             </div>
             <div className="n2">
                 <Avatar img={heart}/>
                 <Avatar onClick={onNavBarOpen} img={wapp} background="green"/>
-                <h1>+971 317 27209</h1>
+                <h1 className='nv'>+971 317 27209</h1>
             </div>
             <div className="n3">
              <Menubar onClick={onNavBarOpen}/>

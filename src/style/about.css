@@ -4,8 +4,8 @@
 }
 .about p{
     padding: 0 10px;
-    width: 70%;
-    margin: 0;
+    width: 80%;
+    margin: 0 auto;
     font-family: 'Gotham Light', sans-serif;
     font-style: normal;
     font-stretch: normal;
@@ -14,7 +14,7 @@
     font-size: large;
 }
 .container{
-    width: 80%;
+    width: 93%;
     height: 50%;
     margin: 0 auto;
     margin-top: 30px;

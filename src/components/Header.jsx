@@ -1,9 +1,9 @@
 let Header = ({title,showProperties = true})=>{
     return(
-        <div className="header">
-                <div className="title">
+        <div className="headerx">
+                <div className="titlex">
                     <h1>{title}</h1>
-                    <div className="line"></div>
+                    <div className="l"></div>
                 </div>
                 {showProperties && <button>Show All Properties</button>}
              </div>

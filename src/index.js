@@ -3,7 +3,9 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-
+import './fonts/Gotham/GothamPro-Bold.ttf';
+import './fonts/Gotham/GothamPro.ttf';
+import './fonts/Gotham/GothamPro.ttf';
 ReactDOM.render(
   <React.StrictMode>
     <App />
