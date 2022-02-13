@@ -1212,3 +1212,25 @@ h1{
       margin-left: 7% !important;
     }
 }
+
+@media screen and (min-width:1380px) {
+  .infocard{
+     height: 25vh;
+  }
+  .infocard h3{
+    font-size: 3rem !important;
+    margin-bottom: 6%;
+    color: #333;
+  }
+  .infocard h5{
+    color: #333;
+    font-size: 1rem;
+    margin-bottom: 2% !important;
+  }
+  .infocard p{
+    width: 50% !important;
+    margin: 0px !important;
+    text-align: justify !important;
+    font-size: 0.9rem !important;
+  }
+}

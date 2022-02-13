@@ -41,7 +41,6 @@ function App() {
   return (
     <div className="App">
        <HeroSection/>
-      <MobileNavBar/>
        <Features/>
        <Buying/>
        <Renting/>
