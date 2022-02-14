@@ -12,7 +12,9 @@
   font-family: "GothamPro";
   src: url("./fonts/Gotham/GothamPro.ttf") format("truetype");
 }
-
+.bottombar{
+  display: none !important;
+}
 #mobilenavbar{
   display: none;
   position: absolute;
@@ -525,8 +527,12 @@ h1{
 
 
 @media screen and (max-width: 1394px){
+  nav{
+    justify-content: space-evenly;
+  }
   nav img{
    width: 8%;
+   
   }
   .infocard{
     height: 20vh;
@@ -548,7 +554,7 @@ h1{
 @media screen and (max-width: 1183px) {
  
   nav {
-    justify-content: center;
+    justify-content: none;
   } 
   .n1{
     display: none;
@@ -566,7 +572,7 @@ h1{
      width: 200px;
   }
   nav {
-    justify-content: space-around;
+    justify-content: none;
   }
   .n1{
     display: none;
@@ -969,6 +975,9 @@ h1{
 }
 
 @media screen and (max-width: 600px) and (max-height: 800px){
+  .bottombar{
+    display: flex !important;
+  }
   body{
     display: block;
   }
