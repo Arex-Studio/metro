@@ -12,10 +12,10 @@ let TransparentBox = ()=>{
             <div className="items">
                 <div className="block1">
                     <div id="selector">
-                        <Selector options={['Buy']}/>
+                        <Selector id="b" options={['Buy']}/>
                     </div>
                     <div id="selector">
-                        <Selector options={['Completion Status']}/>
+                        <Selector id="c" options={['Completion Status']}/>
                     </div>
                 </div>
                 <div className="block2">

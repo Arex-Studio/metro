@@ -52,7 +52,8 @@ let CarosalView = ({rent=false,expanding = true})=>{
         infinite: true,
         speed: 500,
         slidesToShow: toShow,
-        arrow:false,
+        centerMode: false,
+        draggable: true,
         slidesToScroll: 1,
         prevArrow: <SamplePrevArrow />,
         nextArrow: <SampleNextArrow/>

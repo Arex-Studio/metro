@@ -15,9 +15,9 @@ let CardImage = ({rent=false,expanded=true})=>{
         }
     }
     useEffect(()=>{
-        resize()
+       // resize()
         window.addEventListener('resize',e=>{
-            resize()
+         //   resize()
         })
     },[])
     return(
@@ -27,7 +27,7 @@ let CardImage = ({rent=false,expanded=true})=>{
                 <div className="button">
                     <button style={{background:`${rent? '#25d366':'red'}`}}>{rent ? 'Rent':'Buy'}</button>
                     <button style={{background:'white', marginLeft:'5px',color:'black'}}>Apartments</button>
-                    <div className="bottom" style={{position:'absolute', marginTop:margin}}>
+                    <div className="bottom pricing" style={{position:'absolute'}}>
                         <h3>128,676,278AED</h3>
                     </div>
                 </div>

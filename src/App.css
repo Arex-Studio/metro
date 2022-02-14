@@ -13,7 +13,21 @@
   src: url("./fonts/Gotham/GothamPro.ttf") format("truetype");
 }
 
-
+#mobilenavbar{
+  display: none;
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  background: white;
+  left: 0%;
+  top: 0%;
+}
+.ctax .innerheader h1 {
+  width: 40%;
+}
+.pricing {
+  top: 800% !important;
+}
 .n3 .avatar{
   width: 30px;
   height: 30px;
@@ -118,7 +132,7 @@ body{
   overflow-x: hidden;
 }
 .transparent{
-  width: 70% !important;
+  width: 66% !important;
 }
 .spacer{
   display: none;
@@ -365,7 +379,7 @@ h1{
   align-items: center;
   min-width: 230px;
   padding: 10px;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 5px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 1px 5px;
   margin-right: 30px;
 }
 .card img{
@@ -477,7 +491,7 @@ h1{
   height: 100px;
   padding: 10px 20px;
   align-items: center;
-  border: 1px solid rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(0, 0, 0, 0.15);
 }
 .infocard .column1{
   display: flex;
@@ -510,13 +524,32 @@ h1{
 
 
 
-
+@media screen and (max-width: 1394px){
+  nav img{
+   width: 8%;
+  }
+  .infocard{
+    height: 20vh;
+  }
+  .infocard h3{
+    font-size: 2.5rem;
+  }
+  .infocard h5{
+    font-size: 1rem;
+  }
+  .infocard p{
+    margin: 0% !important;
+  }
+  .pop .rowA{
+    display: grid;
+  }
+}
 
 @media screen and (max-width: 1183px) {
  
   nav {
     justify-content: center;
-  }
+  } 
   .n1{
     display: none;
   }
@@ -548,12 +581,16 @@ h1{
     align-items: center !important;
     margin-left: 30%;
   }
-  .feature{
-
+  .fr1{
+    margin-bottom: 2% !important;
   }
+  
   .card img{
-    width: 50px !important;
-    height: 50px !important;
+    width: 100px !important;
+    height: 100px !important;
+  }
+  .pricing {
+    top: 400%;
   }
   .card h3, .card p{
     
@@ -584,9 +621,7 @@ h1{
      width: 80%;
      margin-bottom: 10px;
    }
-   .rowA {
-     display: block !important;
-   }
+   
    
    .cardimage{
      transform: scale(0.8);
@@ -655,7 +690,9 @@ h1{
   .n2,.n1{
     display: none;
   }
-  
+  .rowA {
+    display: block !important;
+  }
 }
 
 @media screen and (max-width: 735px){
@@ -673,18 +710,52 @@ h1{
   .cardimage{
     width: 110%;
   }
+ 
   .card{
     width: 30%;
   }
 }
 @media screen and (max-width: 600px){
+  .col1,.col2,.col3{
+    display: none !important;
+  }
+
+  .links{
+    width: 100% !important;
+
+  }
+  .col4{
+    width: 100% !important;
+    margin: 0 auto !important;
+  }
   nav img{
     margin-right: 50px !important;
+  }
+  .ctax .innerheader{
+    display: flex !important;
+    justify-content: flex-start !important;
+    align-items: center !important;
+    margin: 0%;
+
+    width: fit-content !important;
+  }
+  .ctax .innerheader h1{
+    font-size: 3rem;
+    width: fit-content;
   }
   .n3{
     margin-right: 45px !important;
   }
+  .fr1{
+    margin-bottom: 5% !important;
+    margin-top: 8% !important;
+    transform: scale(0.7);
+  }
+  .fr1 h1{
+    transform: scale(0.9);
+  }
  .feature{
+
   margin-bottom: 15% !important;
  }
  .ofplan{
@@ -698,29 +769,60 @@ h1{
   }
 
   .card {
+    height: 180px !important;
+    width: 100% !important;
     margin: 0px !important;
   }
   .fr2{
     width: 100% !important;
     grid-template-columns: 1fr !important;
-    grid-gap: 16 !important;
+    grid-gap: 25px !important;
+    margin: 0 auto !important;
   }
   .feature{
-    width: 80% !important;
-    min-height: 90vh;
-    margin-left: 10px;
+    width: 95% !important;
   }
   .cardimage{
     width: 100%;
   }
   .card{
-    width: 80% !important;
+    width: 95% !important;
     padding-top: 10% !important;
     padding: 10%;
     margin: 0 auto;
   }
 }
 @media screen and (max-width: 735px) { 
+  .pop .headerx {
+    margin-left: 10%;
+  }
+  .headerx .titlex h1{
+    width: fit-content !important;
+  }
+  .pop .rowA {
+    width: 82% !important;
+  }
+
+  
+  .pop .rowA .img{
+   height: 200px ;
+   margin-bottom: 10px;
+  }
+  .infocard{
+    height: 18vh;
+    transform: scale(0.9);
+  }
+  .infocard h5{
+    font-size: 1.2rem !important;
+  }
+  .infocard p{
+    margin: 0% !important;
+    margin-top: 2% !important;
+  }
+  .infocard  h3{
+    font-size: 2.5rem;
+    color: #333 !important;
+  }
   .fr2{
     transform: scale(1);
   }
@@ -734,6 +836,7 @@ h1{
     position: absolute;
     top: 100%;
     left: 50%;
+    margin-top: 5%;
     transform: translate(-50%,20%);
     border:1px #FFD700 solid;
     cursor: pointer;
@@ -806,7 +909,7 @@ h1{
   .innerheader{
     display: flex !important;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
   }
   .column{
@@ -869,7 +972,10 @@ h1{
   body{
     display: block;
   }
-  
+  .fr2{
+    margin: 0% !important;
+    margin: 0 10% !important;
+  }
   .bfind{
     display: flex !important;
     margin-top: 90px;
@@ -963,9 +1069,10 @@ h1{
   .rowA{
     width: 100% !important;
   }
-  .feature{
-    width: 90% !important;
+  .feature .fr2{
+    width: 65% !important;
   }
+  
   .spacer{
     margin-bottom: 150px;
   }
@@ -1036,23 +1143,22 @@ h1{
     margin-top: 30%;
   }
 }
-@media screen and (max-width: 1394px){
-  nav img{
-   width: 8%;
-  }
- 
-}
+
 @media screen and (max-width: 1580px){
   .findBtn {
     width: 30% !important;
   }
 }
 @media screen and (max-height: 700px){
+  .transparent{
+    min-height: 50vh;
+  }
+
   .ctax .button{
     display: flex;
     justify-content: center;
   }
-  
+ 
   .ctax .button button{
     padding: 5px;
     width: 40%;
@@ -1060,11 +1166,6 @@ h1{
   .ctax .column{
     width: 100% !important;
     background: whitesmoke;
-  }
-  .ctax .innerheader{
-    display: flex !important;
-    width: 100%;
-    margin: 10px 0px;
   }
   .innerheader h1{
     font-size: large;
@@ -1228,5 +1329,11 @@ h1{
     margin: 0px !important;
     text-align: justify !important;
     font-size: 0.9rem !important;
+  }
+  
+}
+@media screen and (max-width:1600px) {
+  .pricing {
+    top: 500% !important;
   }
 }

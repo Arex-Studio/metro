@@ -49,7 +49,7 @@ function App() {
        <Popular/>
        <About/>
        <CTA/>
-       {false &&<Footer/>}
+       \<Footer/>
        <BottomBar/>
     </div>
   );
